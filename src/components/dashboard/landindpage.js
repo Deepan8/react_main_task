@@ -1,0 +1,62 @@
+import { Nav, Bluebox, Question, Twobox, Doctorbox, Drugbox, Imagetag, Logoheading, Row, Buttontag, Contentag, Mainblue, Logoname,Links } from "../../../src/components/dashboard/landingpagestyle"
+
+import Footer from "../common/footer";
+
+import { useNavigate } from "react-router-dom";
+
+
+import context from "../../../src/resources/string"
+
+import { images } from "../../resources/images"
+ import { Link } from "react-router-dom"
+
+function Content() {
+    const navigate = useNavigate();
+
+    function handleClick() {
+      navigate("/Drug");
+     
+    }
+    function handleClickPharmacies() {
+        navigate("/Pharmacies");
+       
+      }
+    return (
+        <>
+            <Mainblue>
+                <Nav>{context.Navcontent}</Nav>
+                <Bluebox>
+                    <Question>
+                        {context.Searchwhat}
+                    </Question>
+                    <Twobox>
+                        <Doctorbox>
+                            <Logoheading>
+                                <Imagetag src={images.Stetscope} />
+                                <Logoname>{context.Doctor}</Logoname></Logoheading>
+
+                            <Contentag> {context.Hereyou}</Contentag>
+                            <Buttontag type="submit"   >search for providers</Buttontag>
+                        </Doctorbox>
+
+                        <Drugbox>
+                            <Logoheading><Imagetag src={images.Medicine} />
+                                <Logoname>{context.Drug}</Logoname></Logoheading>
+                            <Contentag> {context.Find}</Contentag>
+                            <Row>
+                             <Links to="/Drug">   <Buttontag type="submit" value="Submit" onClick={handleClick} >search for drugs</Buttontag></Links>
+                             <Links to="/Pharmacies">  <Buttontag type="submit" value="Submit" onClick={handleClickPharmacies} >search for pharmacies</Buttontag></Links>
+                            </Row>
+                        </Drugbox>
+                    </Twobox>
+                </Bluebox>
+            </Mainblue>
+           <Footer/>
+
+
+           
+        </>
+    );
+}
+
+export default Content;
