@@ -1,19 +1,13 @@
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-
-
 export const Nav = styled.div`
 background-color: grey;
 padding: 20px;
 color: white;
 `;
-
 export const Links = styled(Link)`
 text-decoration: none;
 `;
-
-
-
 export const Bluebox = styled.div`
 background-color:rgb(35,82,165);
 display: flex;
@@ -104,10 +98,6 @@ export const Mainblue = styled.div`
 display: flex;
 flex-direction: column;
 `;
-
-
-
-
 export const Greypart = styled.div`
 display: flex;
 flex-direction: column;

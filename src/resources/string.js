@@ -69,3 +69,94 @@ export const explain = {extHours,time,tt,ttCount,pharmType,fillup,pricing,prefer
 
 const ammcheading = "AMMC Garfield Hospital Medical Center";
 export const ammccontext={ammcheading}
+
+const providerHeader = "| Search for Providers"
+const purpose = "Let's begin adding your customer information."
+const providerQuery = "What is your customer's coverage area?"
+const zipCode = "ZIP Code & Country"
+export const provider = {providerHeader,purpose,providerQuery,zipCode};
+
+
+export const pharmacydetails = [
+    {
+        id:0,
+        name : 'CVS Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:1,
+        name : 'Avenue Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION']
+    },
+    {
+        id:2,
+        name : 'CVS Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:3,
+        name : 'Kroger Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN','SPECIALITY','LONG TERM CARE']
+    },
+    {
+        id:4,
+        name : 'Cardinal Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:5,
+        name : 'Wallgreens Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:6,
+        name : 'CVS Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:7,
+        name : 'Avenue Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION']
+    },
+    {
+        id:8,
+        name : 'CVS Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    },
+    {
+        id:9,
+        name : 'Cardinal Pharmacy',
+        address : '101 W Walnut st Ste 123 Gardena, CA 90248',
+        phone : '310-515-8425',
+        distance : '2 miles away',
+        tag : ['HOME INFUSION','RETAIL CHAIN']
+    }
+
+]

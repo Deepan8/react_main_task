@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 
 export const Available = styled.div`
 padding-left:3rem;
-width: 25rem;
+width: 34rem;
 `
 export const Divsion = styled.div`
 display:flex;
@@ -15,7 +15,7 @@ width: 100%;`
 
 
 export const AddressContact = styled.div`
-font-size:14px;`
+font-size:13px;`
 
 export const PharmacyName = styled.h4`
 /* margin:14px 0; */

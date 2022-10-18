@@ -4,16 +4,18 @@ import {
     PharmacyName, Pharm, Planing, Tag, TagContent, PreferOptions, StandardOptions, Div,
     Information, P, H4, Fillup
 } from "./Aboutpharmacystyle"
-
+import { pharmacydetails } from "../../../resources/string";
 export default function About() {
     const { state } = useLocation();
     return (
         <>
-            {((state.id === details.cvs) || (state.id === details.avenue) || (state.id === details.kroger)
-                || (state.id === details.cardinal) || (state.id === details.wallgreen)) && (
+            {pharmacydetails.map((pharmacy) => {
+                return (
                     <>
+                        {state.id === pharmacy.id  && (
+                            <>
                         <Pharm>
-                            <PharmacyName>{state.id}</PharmacyName>
+                            <PharmacyName>{pharmacy.name}</PharmacyName>
                            
                             <Div>
                                 <Planing>
@@ -79,10 +81,11 @@ export default function About() {
                             </Div>
                         </Pharm>
 
-                    </>
-                )}
-        </>
+                        </> 
+                        )
+            }
+            </> )
+         }
+            ) } </>
 
-
-    )
-}
+       ) }

@@ -1,15 +1,8 @@
 import { Nav, Bluebox, Question, Twobox, Doctorbox, Drugbox, Imagetag, Logoheading, Row, Buttontag, Contentag, Mainblue, Logoname,Links } from "../../../src/components/dashboard/landingpagestyle"
-
 import Footer from "../common/footer";
-
 import { useNavigate } from "react-router-dom";
-
-
 import context from "../../../src/resources/string"
-
 import { images } from "../../resources/images"
- import { Link } from "react-router-dom"
-
 function Content() {
     const navigate = useNavigate();
 
@@ -36,7 +29,7 @@ function Content() {
                                 <Logoname>{context.Doctor}</Logoname></Logoheading>
 
                             <Contentag> {context.Hereyou}</Contentag>
-                            <Buttontag type="submit"   >search for providers</Buttontag>
+                            <Links to="/Pro"> <Buttontag type="submit"   >search for providers</Buttontag></Links>
                         </Doctorbox>
 
                         <Drugbox>

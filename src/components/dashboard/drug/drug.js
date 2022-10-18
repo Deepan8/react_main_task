@@ -2,49 +2,13 @@ import { Nav,Bluebox,Coverage,Let,Question,SearchBar,Input,Button,Invalid} from 
 import { useState } from "react";
 import context from "../../../resources/string"
 import Closepop from "../../../assets/images/close.png"
-// import SearchBar from "../../dashboard/Search/SearchBar";
 import Hydroco from "./Hydro/hydro";
 import Footer from "../../common/footer";
 import { Modal, Overlay, ModalContent, Popuphead, ButtonTag, Close, Buttons, PopupContent } from '../popupstyle'
 import { useRef } from "react";
-// import  from "../Search/SearchBar";
 import {data} from "../Search/search_animal";
-
 function Drug() {
-//     const [value, setValue] = useState("");
-//     const onChange = (event) => {
-//         setValue(event.target.value);
-//     };
 
-//     const onSearch = (searchTerm) => {
-//         setValue(searchTerm);
-       
-
-//     };
-//     const [empty, isEmpty] = useState(false);
-//     const handleClick = event => {
-//         if (value === 'Hydrocodone') {
-//             isShown(true);
-//             isEmpty(false);
-//         }
-//         else {
-//             isEmpty(true);
-//             isShown(false);
-//         }
-//     }
-
-//   const [shown,isShown] = useState(false);
-//   const handleSubmit = event =>{
-//    isShown(current => !current);
-   
-// }
-// const yearplan = useRef();
-
-// const [modal, setModal] = useState(false);
-//     const toggleModal = () => {
-//         if (yearplan.current.value === 'Next Year')
-//             setModal(!modal);
-//     };
 const yearplan = useRef();
 const [value, setValue] = useState("");
 const [shown, isShown] = useState(false);
@@ -125,7 +89,7 @@ const onSearch = (searchTerm) => {
                    <SearchBar>
                    <Input type="text" value={value} onChange={onChange}/>
                     <Button  onClick={handleClick} >Search</Button>
-                {/* <SearchBarclick/> */}
+              
                 </SearchBar>
 
                     

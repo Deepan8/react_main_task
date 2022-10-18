@@ -1,22 +1,22 @@
-import { Nav, Bluebox, Coverage, Let, Question, Search, Tot, Whitebox, Titlebox, Combothree, Downcombothree, Downcombotwo, Row, Col, Buttontag, Bluecontent ,InputType,Select} from "../../../components/dashboard/pharmacies/pharmaciesstyle"
+import { Nav, Bluebox, Coverage, Let, Question, Search, Tot, Whitebox, Titlebox, Combothree, Downcombothree, Downcombotwo, Row, Col, Buttontag, Bluecontent, InputType, Select } from "../../../components/dashboard/pharmacies/pharmaciesstyle"
 import context from "../../../resources/string"
 import { useRef, useState } from "react";
 import PharmacyNames from "./PharmacyName";
 import Footer from "../../common/footer";
 
 function Pharmacies() {
-    const hours=useRef();
-    const all=useRef();
-    const standard=useRef();
-    const prefer=useRef();
+    const hours = useRef();
+    const all = useRef();
+    const standard = useRef();
+    const prefer = useRef();
 
-    const [shown,isShown] = useState(false);
-    const handleSubmit = event =>{
-    
-     if (hours.current.checked === true && (all.current.checked === true || standard.current.checked === true ||
-        prefer.current.checked === true)) {
+    const [shown, isShown] = useState(false);
+    const handleSubmit = event => {
+
+        if (hours.current.checked === true && (all.current.checked === true || standard.current.checked === true ||
+            prefer.current.checked === true)) {
             isShown(current => !current);
-        } 
+        }
     }
     return (
         <Tot>
@@ -55,15 +55,15 @@ function Pharmacies() {
                             <Titlebox>
                                 <h3>Pharmacy Type</h3>
                                 <InputType>
-                
-                <Select id="type">
-                    <option value="all">All</option>
-                    <option value="hospital">Hospital</option>
-                    <option value="clinical">Clinical</option>
-                    <option value="consulting">Consulting</option>
-                    <option value="industrial">Industrial</option>
-                </Select>
-            </InputType>
+
+                                    <Select id="type">
+                                        <option value="all">All</option>
+                                        <option value="hospital">Hospital</option>
+                                        <option value="clinical">Clinical</option>
+                                        <option value="consulting">Consulting</option>
+                                        <option value="industrial">Industrial</option>
+                                    </Select>
+                                </InputType>
                             </Titlebox>
                         </Combothree>
                         <Downcombothree>
@@ -78,7 +78,7 @@ function Pharmacies() {
                                 <h4>cost Share</h4>
                                 <Col>
                                     <Row>
-                                        <input type="radio"n ref={all} id="html" name="fav_language" value="HTML" />
+                                        <input type="radio" n ref={all} id="html" name="fav_language" value="HTML" />
                                         <label for="html">All</label>
                                     </Row>
                                     <Row>
@@ -91,7 +91,7 @@ function Pharmacies() {
                                     </Row>
                                 </Col>
                             </Downcombotwo>
-                    <Buttontag type="submit" value="Submit" onClick={handleSubmit}>Search Pharmacy</Buttontag>
+                            <Buttontag type="submit" value="Submit" onClick={handleSubmit}>Search Pharmacy</Buttontag>
 
                         </Downcombothree>
 
@@ -107,8 +107,8 @@ function Pharmacies() {
                 </Bluecontent>
             </Bluebox>
             {/* <PharmacyNames/> */}
-            {shown &&  <PharmacyNames/> }
-            <Footer/>
+            {shown && <PharmacyNames />}
+            <Footer />
         </Tot>
     );
 }
