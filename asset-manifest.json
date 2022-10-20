@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/maintask_deploy/static/css/main.abd64e84.css",
+    "main.js": "/maintask_deploy/static/js/main.a7a448ca.js",
+    "index.html": "/maintask_deploy/index.html",
+    "main.abd64e84.css.map": "/maintask_deploy/static/css/main.abd64e84.css.map",
+    "main.a7a448ca.js.map": "/maintask_deploy/static/js/main.a7a448ca.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.abd64e84.css",
+    "static/js/main.a7a448ca.js"
+  ]
+}
